@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="./JosefinSans-VariableFont_wght.ttf">
+    <title>Base apparel comming soon master</title>
+</head>
+<body>
+  <header>
+     <h1 style="display:none;">logo</h1>
+    <img src="images/logo.svg" id="icon" alt="logo deskop">
+    <div id="mobile">
+      <img src="images/hero-mobile.jpg" alt="hero-mobile">
+    </div>
+ </header> 
+  <main>
+     <h1><span id="we" >WE'RE</span><br> COMING <br> SOON</h1>
+     <p>Hello fellow shoppers!. We're currently building our new fashion store.
+        Add your email below to stay up to-date with annoucements and our launch deals.
+     </p>
+    <section>
+        <h2 style="display:none">email input</h2>
+        <form  method="post" id="form" > 
+          <input id="mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" value="Email Addres"  onfocus="this.value=' '" oninvalid="mistake()" required > <!--con este onfocus y con this.value vacio hago que el input borre el texto y ponga espacio para escribir -->
+          <!-- el type email y el pattern me da la estructura para que el usuario ponga el correo bien. la estructura del pattern se une por un +-->
+          <!-- el onvalid me permie disparar una function que haga dependiendo de la validez de la info que ponga el usario en el input-->
+          <button id="arrow" type="submit"> > </button>
+        </form>
+        <div id="show" ></div> <!--debo ponr el div para el mensaje de error-->
+      </section>
+  </main>
+    <div class="cover">
+    <h2 style="display:none">imagen</h2>
+    <img src="images/hero-desktop.jpg" alt="hero desktop">
+    </div>
+    <script type="text/javascript" src="./javas.js" > </script> 
+</body>
+</html>

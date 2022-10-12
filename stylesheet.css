@@ -1,0 +1,219 @@
+body {
+  width: 1440px;
+  margin: 140px 10px 0px 100px;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: repeat;
+  font-size: 16px;
+}
+
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("./JosefinSans-VariableFont_wght.ttf");
+}
+
+main {
+    width: 630px;
+    text-align: justify;
+    height: 700px;
+    background-color: white;
+    margin-top: 15%;
+    padding: 30px 200px 100px 120px;
+    font-family: "Josefin Sans";
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: 400;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 20px;
+    line-height: 18mm;
+}
+
+#icon {
+    position: absolute;
+    left: 220px;
+    top: 170px;
+}
+
+#we {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    line-height: 7mm;
+    padding: 0px 180px 50px 0px;
+
+}
+
+.cover {
+    position: absolute;
+    display: flex;
+    left: 860px;
+    top: 138px;
+    width: 530px;
+    height: 700px;
+}
+
+#mobile {
+    display: none; /* la pongo asi por que solo la quiero mostrar en la version mobile*/
+}
+
+#mail {
+    height: 50px; 
+    width: 65%;
+    border-radius: 25px;
+    border-color: pink;
+    border-top-color: pink;
+    background: linear-gradient(hsl(0, 0%, 100%),hsl(0, 100%, 98%));/* asi colco un color de fondo difumindado */
+    font-size:small;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.5mm;
+    padding-left: 1cm; /* asi creo espacio en blanco en el campo de texto del input*/
+}
+
+
+#mail:focus { /* este es el status del input cuando estoy dentro de el */
+   outline: none; /* asi hago que el color del borde no cambie cuando estoy en la casilla del input*/
+   color: black;
+   letter-spacing: 0.3mm;
+   border-color: red;
+}
+
+
+#arrow {
+    cursor: url("pointer.png"), auto; /* asi coloco un pointer externo */
+    position: absolute;
+    border-radius: 28px;
+    border: none; /* asi dejo un border sin color  */
+    height: 55px; 
+    width: 6%;
+    background: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));  /* asi colco un color de fondo difumindado */
+    left: 580px;
+    font-size: xx-large;
+    color: white;
+    font-stretch:extra-condensed; /* asi estiro el texto del button */
+}
+
+#arrow:hover {
+    background: linear-gradient(hsl(0, 74%, 93%),hsl(0, 83%, 81%));
+    box-shadow: 3px 5px hsl(0, 66%, 92%); /* esto hace que se genere una sombra en el elemento  onhover*/
+    
+}
+
+#show {
+    color: hsl(0, 78%, 75%);
+    padding: 15px 0px 0px 20px;
+    text-align: left;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 375px ) {
+
+body  {
+        display: flex;
+        padding-left: 5px;
+        margin-left: 0px;
+        width: 380px;
+      }   
+
+ main {
+        width: 330px;
+        text-align: center;
+        height: 700px;
+        padding: 30px 0px 100px 20px;
+ }
+
+
+
+.cover {
+    display: none; /* para que no me muestre la imagen grande solo la de mobile */
+}
+
+#mobile {
+   display: flex;
+   padding: 40px 0px 0px 0px;
+   width: 380px;
+   padding-left: 0px;
+}
+
+
+header {
+    width: 100%;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    padding-left: 20%;
+}
+
+
+#icon {
+    padding-left: 50px;
+    display: flex;
+}
+
+h1 {
+    padding-top: 250px;
+    font-size: 45px;
+    font-weight: 400;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 15px;
+    line-height: 13mm;
+
+}
+
+#we {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    line-height: 7mm;
+    padding: 5px 10px 50px 0px;
+    text-align: center;
+
+}
+
+
+#form {
+    display: flex;
+    width: 350px;
+    padding: 0px 0px 10px 0px;
+}
+
+
+#mail {
+    height: 50px; 
+    width: 75%;
+    border-radius: 25px;
+    border-color: pink;
+    border-top-color: pink;
+    background: linear-gradient(hsl(0, 0%, 100%),hsl(0, 100%, 98%));/* asi colco un color de fondo difumindado */
+    font-size:small;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.5mm;
+    padding-left: 1cm; /* asi creo espacio en blanco en el campo de texto del input*/
+}
+
+
+
+#arrow {
+    
+    position: absolute;
+    border-radius: 28px;
+    height: 55px; 
+    width: 16%;
+    left: 270px;
+  
+}
+
+
+}
